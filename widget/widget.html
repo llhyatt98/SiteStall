@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="widget.css"/>
+     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  </head>
+
+<body class="widget">
+
+  <div id="popup-content">
+
+    <div class = "title">SITE STALL</div>
+    <div class = "descrip">an online distraction tool</div>
+
+    <hr>
+    <!-- <br> -->
+
+    <div class = "dl">Choose a Daily Limit</div>
+    <!-- <br> -->
+
+    <!-- <pre class="center">[select HOURS]          [select MINUTES]</pre> -->
+
+    <div align = "center" class="dh">
+
+      <select id="dailyHour">
+        <option value="00">--hours--</option>
+        <option value="00">00</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="06">06</option>
+        <option value="07">07</option>
+        <option value="08">08</option>
+        <option value="09">09</option>
+        <option value="10">10</option>
+      </select>
+
+      <select id="dailyMin">
+        <option value="00">--minutes--</option>
+        <option value="00">00</option>
+        <option value="01">01</option>
+        <option value="02">02</option>
+        <option value="03">03</option>
+        <option value="04">04</option>
+        <option value="05">05</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+        <option value="30">30</option>
+        <option value="45">45</option>
+      </select>
+
+    </div>
+
+    <!-- <br> -->
+    <hr>
+    <!-- <br> -->
+
+    <div class = "dl">Distract Time Remaining</div>
+
+    <div align = "center" >
+
+        <div class="hrs">HRS</div>
+        <div id="hours">00</div>
+
+        <div class="mins">MINS</div>
+        <div id="minutes">00</div>
+
+    </div>
+
+    <hr>
+    <!-- <br> -->
+
+    <div class = "dl">BLOCKLIST</div>
+
+    <div class="bl-container">
+
+      <table class="bl-table" id="bl-table">
+
+        <tr>
+
+          <th class = "tableHead">Site Names</th>
+          <th>
+            <input type="button" id="bl-table-add-row" class="bl-table-add-row" value="+" style="display: block; margin: 0 auto;">
+          </th>
+
+        </tr>
+
+        <tr class="bl-table-row">
+
+            <td>
+              <input type="text" class="site-name" name="site-name" placeholder="enter site name..." size="25%">
+            </td>
+
+            <td>
+              <input type="button" class="bl-table-delete-row" value="-" style="display: block; margin: 0 auto;">
+            </td>
+
+        </tr>
+
+      </table>
+
+    </div>
+
+    <div class="savewrap">
+      <button class="save toggleclass" id="save" type="button">save blocklist</button>
+    </div>
+
+    <hr>
+    <!-- <br> -->
+
+    <div class = "dl"><a href="stats.html" target="targetframe">STATISTICS</a></div>
+
+    <!-- <br> -->
+    <hr>
+
+  </div>
+
+  <script src="widget.js"></script>
+
+</body>
+
+</html>

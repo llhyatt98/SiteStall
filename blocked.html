@@ -1,0 +1,27 @@
+<meta charset="utf-8"/> <!-- Added this line to fix a console error -->
+<html>
+    <head>
+        <link rel="stylesheet" href="blocked.css">
+        <title>Blocked!</title>
+        <link rel="icon" href="/icons/pause.png"></link>
+    </head>
+    <body>
+            <div id="bpage">
+            <h1>
+                That's enough!!
+            </h1> 
+            
+            <p> You have reached your limit, it may be time to work on something more productive. </p>
+            <div id="reason">
+                <!-- On Stay button click: Use alert to have them input their reason then redirect to previous page -->
+                <button class="btn" id="stay">Stay Distracted</button>
+                <!-- On leave, redirect to google (?) -->
+                <!-- <button class="btn" id="leave">Leave</button> -->
+            </div>
+            <div id="other"></div>
+            <div id="submit_button"></div>
+            <div id="message"></div>
+        </div>
+        <script src="blocked_page.js"></script>
+    </body>
+</html>
